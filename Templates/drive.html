@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Drive</title>
+  </head>
+  <body>
+    <h1>Google Drive</h1>
+
+    <h2>Upload a file</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file"><br><br>
+      <input type="submit" value="Upload">
+    </form>
+
+    <h2>Download a file</h2>
+    <form action="/download" method="GET">
+      <input type="text" name="file_id" placeholder="File ID"><br><br>
+      <input type="submit" value="Download">
+    </form>
+  </body>
+</html>
+
